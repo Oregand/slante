@@ -10,6 +10,9 @@ buildscript {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
 		classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
+		testCompile('org.jetbrains.kotlin:kotlin-test')
+		testCompile('org.jetbrains.kotlin:kotlin-test-junit')
+		testCompile('com.github.fakemongo:fongo:2.1.0')
 	}
 }
 
